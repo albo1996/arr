@@ -1,10 +1,5 @@
 /* Задание 1 */
-let arr1 = [];
-let i = 1;
-while (i<=100) {
-    arr1.push(i);
-    i++;
-}
+let arr1 = Array.from({length: 100}, (v, k) => k+1)
 function s(arr) {
     let j, temp;
     let i = arr.length - 1;

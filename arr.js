@@ -12,7 +12,7 @@ console.log(arr2);
 let arr3 = arr1.map(function(n, index) {
     let c = n - arr2[index];
     if (c > 0) {return n - arr2[index];}
-    else {return arr2[index] - n;} //Если разность отрицательная, меняем местами слагаемые.
+    else {return arr2[index] - n;} //Если разность отрицательная, меняем местами уменьшаемое и вычитаемое.
 });
 console.log(arr3);
 

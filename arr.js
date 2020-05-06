@@ -1,5 +1,5 @@
 /* Задание 1 */
-let arr1 = Array.from({length: 100}, (v, k) => k+1);
+let arr1 = Array.from({length: 100}, (n, i) => i+1);
 arr1.sort(() => Math.random() - 0.5);
 console.log(arr1);
 

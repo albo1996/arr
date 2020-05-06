@@ -1,18 +1,6 @@
 /* Задание 1 */
-let arr1 = Array.from({length: 100}, (v, k) => k+1)
-function s(arr) {
-    let j, temp;
-    let i = arr.length - 1;
-	while(i > 0){
-		j = Math.floor(Math.random()*(i + 1));
-		temp = arr[j];
-		arr[j] = arr[i];
-        arr[i] = temp;
-        i--;
-	}
-	return arr;
-}
-s(arr1);
+let arr1 = Array.from({length: 100}, (v, k) => k+1);
+arr1.sort(() => Math.random() - 0.5);
 console.log(arr1);
 
 /*Задание 2 */

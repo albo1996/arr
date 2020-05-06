@@ -4,9 +4,7 @@ arr1.sort(() => Math.random() - 0.5);
 console.log(arr1);
 
 /*Задание 2 */
-let arr2 = arr1.map(function(n) {
-    return n;
-})
+let arr2 = arr1.map(n => n);
 arr2.reverse();
 console.log(arr2);
 

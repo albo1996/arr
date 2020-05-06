@@ -20,8 +20,6 @@ console.log(arr3);
 
 /*Задание 4 */
 let sum = 0;
-arr3.forEach(function(n) {
-    sum += n;
-})
+arr3.forEach((n,y) => sum += n);
 let am = sum / arr3.length; //Среднее арифметическое.
 console.log(am);

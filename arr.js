@@ -9,10 +9,7 @@ arr2.reverse();
 console.log(arr2);
 
 /*Задание 3 */
-let arr3 = arr1.map(function(n, index) {
-    let c = n - arr2[index];
-    return c > 0 ? n - arr2[index] : arr2[index] - n; //Если разность отрицательная, меняем местами уменьшаемое и вычитаемое.
-});
+let arr3 = arr1.map((n, index) => n - arr2[index]);
 console.log(arr3);
 
 /*Задание 4 */
